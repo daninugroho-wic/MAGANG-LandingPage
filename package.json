@@ -19,6 +19,7 @@
         "@inertiajs/react": "^2.0.0",
         "@vitejs/plugin-react": "^4.3.4",
         "react": "^19.0.0",
-        "react-dom": "^19.0.0"
+        "react-dom": "^19.0.0",
+        "swiper": "^11.1.15"
     }
 }

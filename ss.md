@@ -6,3 +6,4 @@ npm install @inertiajs/react
 npm install -D tailwindcss postcss autoprefixer
 npx tailwindcss init
 npm install
+npm install swiper
