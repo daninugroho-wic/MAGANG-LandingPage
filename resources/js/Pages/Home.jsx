@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect} from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -7,73 +7,147 @@ import { Pagination } from 'swiper/modules';
 
 export default function Home() {
     const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+    const [isScrolled, setIsScrolled] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            setIsScrolled(window.scrollY > 50);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
     return (
         <div className="min-h-screen flex flex-col">
             {/* Navbar */}
-            <header style={{ backgroundColor: '#C1BAA1' }} className="text-white py-6 shadow-md fixed top-0 text-left-0 w-full z-50 font-sans">
-                <div className="container mx-auto flex justify-between items-center px-4">
-                    {/* Logo */}
-                    <div className="flex items-center space-x-2">
+            <header
+            style={{ backgroundColor: '#C1BAA1' }}
+            className={`text-white py-3 shadow-md fixed top-0 left-0 w-full z-50 font-sans transition-all duration-300 ${
+                isScrolled ? 'bg-opacity-95' : ''
+            }`}
+        >
+            <div className="container mx-auto flex justify-between items-center px-4">
+                {/* Logo */}
+                <div className="flex flex-col items-center space-y-1 logo-container">
+                    {!isScrolled && (
                         <img
                             src="img/maxnet.png"
                             alt="Logo"
-                            className="h-10 sm:h-12 md:h-16 w-auto"
+                            className="logo h-10 sm:h-12 md:h-16 w-auto transition-all duration-300"
                         />
-                        <span className="text-2xl font-bold text-red-500">Plus</span>
-                    </div>
-
-                    {/* Navigation */}
-                    <nav className="hidden md:flex space-x-7 items-center">
-                        <a href="#home" className="hover:text-[#493628] font-semibold transition duration-300 transform hover:scale-105">Home</a>
-                        {/* About Us Dropdown */}
-                        <div className="relative group">
-                            <button className="hover:text-[#493628] font-semibold transition duration-300 transform hover:scale-105">About Us</button>
-                            <div className="absolute hidden group-hover:block bg-white shadow-lg py-2 w-48 rounded-lg z-10">
-                                <a href="#sejarah" className="block px-4 py-2 text-[#493628] hover:bg-[#ECEBDE] transition duration-300">Sejarah</a>
-                                <a href="#visi" className="block px-4 py-2 text-[#493628] hover:bg-[#ECEBDE] transition duration-300">Visi & Misi</a>
-                            </div>
-                        </div>
-                        <a href="#hubungi" className="hover:text-[#493628] font-semibold transition duration-300 transform hover:scale-105">Contact Us</a>
-                        <a href="#esg" className="hover:text-[#493628] font-semibold transition duration-300 transform hover:scale-105">Layanan</a>
-                    </nav>
-
-                    {/* Language Switcher */}
-                    <div className="hidden md:flex items-center space-x-2">
-                        <button className="flex items-center space-x-1 border border-gray-300 rounded-full px-2 py-1 hover:border-red-500 transition duration-300">
-                            <img src="img/flagin.png" alt="ID" className="h-4" />
-                            <span>ID</span>
-                        </button>
-                        <button className="flex items-center space-x-1 border border-gray-300 rounded-full px-2 py-1 hover:border-red-500 transition duration-300">
-                            <img src="img/flagen.png" alt="EN" className="h-4" />
-                            <span>EN</span>
-                        </button>
-                    </div>
-
-                    {/* Mobile Menu Toggle */}
-                    <div className="md:hidden flex items-center">
-                        <button
-                            onClick={() => setMobileMenuOpen(!isMobileMenuOpen)}
-                            className="text-black focus:outline-none"
-                        >
-                            <svg className="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
-                            </svg>
-                        </button>
-                    </div>
+                    )}
                 </div>
 
-                {/* Mobile Navigation */}
-                {isMobileMenuOpen && (
-                    <div className="md:hidden">
-                        <nav className="flex flex-col bg-blue py-2 px-9 space-y-2 shadow-lg text-right">
-                            <a href="#home" className="hover:text-[#493628] font-semibold transition duration-300">Home</a>
-                            <a href="#tentang" className="hover:text-[#493628] font-semibold transition duration-300">About Us</a>
-                            <a href="#hubungi" className="hover:text-[#493628] font-semibold transition duration-300">Contact Us</a>
-                            <a href="#esg" className="hover:text-[#493628] font-semibold transition duration-300">Layanan</a>
-                        </nav>
+                {/* Navigation */}
+                <nav className="hidden md:flex space-x-7 items-center">
+                    <a
+                        href="#home"
+                        className="hover:text-[#493628] font-semibold transition duration-300 transform hover:scale-105"
+                    >
+                        Home
+                    </a>
+                    {/* About Us Dropdown */}
+                    <div className="relative group">
+                        <button className="hover:text-[#493628] font-semibold transition duration-300 transform hover:scale-105">
+                            About Us
+                        </button>
+                        <div className="absolute hidden group-hover:block bg-white shadow-lg py-2 w-48 rounded-lg z-10">
+                            <a
+                                href="#sejarah"
+                                className="block px-4 py-2 text-[#493628] hover:bg-[#ECEBDE] transition duration-300"
+                            >
+                                Sejarah
+                            </a>
+                            <a
+                                href="#visi"
+                                className="block px-4 py-2 text-[#493628] hover:bg-[#ECEBDE] transition duration-300"
+                            >
+                                Visi & Misi
+                            </a>
+                        </div>
                     </div>
-                )}
-            </header>     
+                    <a
+                        href="#hubungi"
+                        className="hover:text-[#493628] font-semibold transition duration-300 transform hover:scale-105"
+                    >
+                        Contact Us
+                    </a>
+                    <a
+                        href="#esg"
+                        className="hover:text-[#493628] font-semibold transition duration-300 transform hover:scale-105"
+                    >
+                        Layanan
+                    </a>
+                </nav>
+
+                {/* Language Switcher */}
+                <div className="hidden md:flex items-center space-x-2">
+                    <button className="flex items-center space-x-1 border border-gray-300 rounded-full px-2 py-1 hover:border-red-500 transition duration-300">
+                        <img src="img/flagin.png" alt="ID" className="h-4" />
+                        <span>ID</span>
+                    </button>
+                    <button className="flex items-center space-x-1 border border-gray-300 rounded-full px-2 py-1 hover:border-red-500 transition duration-300">
+                        <img src="img/flagen.png" alt="EN" className="h-4" />
+                        <span>EN</span>
+                    </button>
+                </div>
+
+                {/* Mobile Menu Toggle */}
+                <div className="md:hidden flex items-center">
+                    <button
+                        onClick={() => setMobileMenuOpen(!isMobileMenuOpen)}
+                        className="text-black focus:outline-none"
+                    >
+                        <svg
+                            className="h-6 w-6"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                        >
+                            <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeWidth="2"
+                                d="M4 6h16M4 12h16M4 18h16"
+                            />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            {/* Mobile Navigation */}
+            {isMobileMenuOpen && (
+                <div className="md:hidden">
+                    <nav className="flex flex-col bg-blue py-2 px-9 space-y-2 shadow-lg text-right">
+                        <a
+                            href="#home"
+                            className="hover:text-[#493628] font-semibold transition duration-300"
+                        >
+                            Home
+                        </a>
+                        <a
+                            href="#tentang"
+                            className="hover:text-[#493628] font-semibold transition duration-300"
+                        >
+                            About Us
+                        </a>
+                        <a
+                            href="#hubungi"
+                            className="hover:text-[#493628] font-semibold transition duration-300"
+                        >
+                            Contact Us
+                        </a>
+                        <a
+                            href="#esg"
+                            className="hover:text-[#493628] font-semibold transition duration-300"
+                        >
+                            Layanan
+                        </a>
+                    </nav>
+                </div>
+            )}
+        </header>   
 
             {/* Body */}
             <main className="flex-1">
@@ -91,7 +165,7 @@ export default function Home() {
                             <div
                                 className="h-full bg-cover bg-center flex items-center justify-center"
                                 style={{
-                                    backgroundImage: "url('/img/wallpap.jpg')",
+                                    backgroundImage: "url('/img/wallpap3.jpg')",
                                 }}
                             >
                                 <div className="text-center">
@@ -113,10 +187,10 @@ export default function Home() {
                             <div
                                 className="h-full bg-cover bg-center flex items-center justify-center"
                                 style={{
-                                    backgroundImage: "url('/img/wallpap1.jpg')",
+                                    backgroundImage: "url('/img/wallpap4.jpg')",
                                 }}
                             >
-                                <div className="text-center">
+                                <div className="text-left">
                                     <h1 className="text-7xl font-bold text-white mb-4">
                                         Explore Our Services
                                     </h1>
@@ -135,7 +209,7 @@ export default function Home() {
                             <div
                                 className="h-full bg-cover bg-center flex items-center justify-center"
                                 style={{
-                                    backgroundImage: "url('/img/wallpap2.jpg')",
+                                    backgroundImage: "url('/img/wallpap5.jpg')",
                                 }}
                             >
                                 <div className="text-center">
@@ -161,17 +235,16 @@ export default function Home() {
                             <div className="text-center md:text-left">
                                 <h3 className="text-3xl font-bold text-gray-800 mb-4">About Us</h3>
                                 <p className="text-lg text-gray-600">
-                                    Kami adalah tim profesional yang siap membantu Anda dengan layanan terbaik. 
-                                    Misi kami adalah memberikan solusi kreatif untuk semua kebutuhan Anda.
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem autem accusamus dolore doloribus eos facere maxime eius fugiat! Corporis temporibus alias, tempora sapiente laudantium quo consequatur illum sit doloremque perferendis.
                                 </p>
                             </div>
 
                                 {/* Kolom 2: Gambar */}
                                 <div className="flex justify-center">
                             <img 
-                                src="/img/wallpap.jpg" 
+                                src="/img/business.png" 
                                 alt="About Us" 
-                                className="rounded-lg shadow-md"
+                                className="rounded-lg"
                             />
                         </div>  
                     </div>
@@ -306,12 +379,16 @@ export default function Home() {
                 </section>
 
                 {/* Services Section */}
-                <section id="services" className="py-20 bg-white">
+                <section 
+                    id="services" 
+                    className="py-20 bg-white bg-fixed" 
+                    style={{ backgroundImage: 'url(/img/back1.jpg)', backgroundPosition: 'center', backgroundSize: 'cover' }}
+                >
                     <div className="responsive-wrapper container mx-auto text-center">
-                        <h3 className="text-3xl font-bold text-gray-800 mb-6">Mitra Terbaik</h3>
+                        <h3 className="text-3xl font-bold text-gray-800 mb-5">Mitra Terbaik</h3>
                         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
                             {/* Service 1 */}
-                            <div className="p-6 bg-gray-50 shadow-md rounded">
+                            <div className="p-6">
                                 <img
                                     src="/img/xl.png"
                                     alt="Service 1"
@@ -320,7 +397,7 @@ export default function Home() {
                                 <p className="text-gray-600">Deskripsi singkat layanan 1.</p>
                             </div>
                             {/* Service 2 */}
-                            <div className="p-6 bg-gray-50 shadow-md rounded">
+                            <div className="p-6">
                                 <img
                                     src="/img/smartfren.png"
                                     alt="Service 2"
@@ -329,7 +406,7 @@ export default function Home() {
                                 <p className="text-gray-600">Deskripsi singkat layanan 2.</p>
                             </div>
                             {/* Service 3 */}
-                            <div className="p-6 bg-gray-50 shadow-md rounded">
+                            <div className="p-6">
                                 <img
                                     src="/img/telkomsel.png" 
                                     alt="Service 3"
@@ -338,7 +415,7 @@ export default function Home() {
                                 <p className="text-gray-600">Deskripsi singkat layanan 3.</p>
                             </div>
                             {/* Service 4 */}
-                            <div className="p-6 bg-gray-50 shadow-md rounded">
+                            <div className="p-6">
                                 <img
                                     src="/img/indosat.png"
                                     alt="Service 4"
