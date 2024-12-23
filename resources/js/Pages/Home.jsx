@@ -1,12 +1,8 @@
-
 import React, { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-
-import 'swiper/css';
 import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
-
 
 
 export default function Home() {
@@ -14,12 +10,7 @@ export default function Home() {
     return (
         <div className="min-h-screen flex flex-col">
             {/* Navbar */}
-            {/* Header */}
-            <header style={{ backgroundColor: '#C1BAA1' }} className="text-white py-6 shadow-md fixed top-0 left-0 w-full z-50 font-serif">
-                {/* <header
-    style={{ backgroundColor: '#C1BAA1' }}
-    className="text-white py-2 shadow-md fixed top-0 left-0 w-[90%] max-w-screen-lg mx-auto z-50 font-serif rounded-lg"
-> */}
+            <header style={{ backgroundColor: '#C1BAA1' }} className="text-white py-6 shadow-md fixed top-0 text-left-0 w-full z-50 font-sans">
                 <div className="container mx-auto flex justify-between items-center px-4">
                     {/* Logo */}
                     <div className="flex items-center space-x-2">
@@ -82,9 +73,7 @@ export default function Home() {
                         </nav>
                     </div>
                 )}
-            </header>
-
-                 
+            </header>     
 
             {/* Body */}
             <main className="flex-1">
@@ -363,7 +352,7 @@ export default function Home() {
             </main>
 
             {/* Footer */}
-            <footer style={{ backgroundColor: '#A59D84' }} className="text-black py-10">
+            <footer style={{ backgroundColor: '#A59D84' }} className="text-[#493628] py-10">
                 <div className="responsive-wrapper container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
                     {/* Container 1: Tentang Website */}
                     <div className="text-center md:text-left">
@@ -372,16 +361,16 @@ export default function Home() {
                             My Website adalah platform yang memberikan layanan terbaik untuk kebutuhan Anda. Kami berdedikasi untuk memberikan pengalaman terbaik bagi pengguna.
                         </p>
                         <div className="flex justify-center md:justify-start space-x-4 mt-4">
-                            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-black hover:text-blue-300">
+                            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-[#493628] hover:text-white">
                                 <i className="fab fa-instagram text-lg"></i>
                             </a>
-                            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-black hover:text-blue-300">
+                            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-[#493628] hover:text-white">
                                 <i className="fab fa-twitter text-lg"></i>
                             </a>
-                            <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer" className="text-black hover:text-blue-300">
+                            <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer" className="text-[#493628] hover:text-white">
                                 <i className="fab fa-whatsapp text-lg"></i>
                             </a>
-                            <a href="mailto:support@mywebsite.com" className="text-black hover:text-blue-300">
+                            <a href="mailto:support@mywebsite.com" className="text-[#493628] hover:text-white">
                                 <i className="fas fa-envelope text-lg"></i>
                             </a>
                         </div>
@@ -391,10 +380,10 @@ export default function Home() {
                     <div className="text-center md:text-left">
                         <h4 className="text-xl font-bold mb-2">Quick Links</h4>
                         <ul className="space-y-2">
-                            <li><a href="#Link1" className="hover:text-blue-300">Link1</a></li>
-                            <li><a href="#Link2" className="hover:text-blue-300">Link2</a></li>
-                            <li><a href="#Link3" className="hover:text-blue-300">Link3</a></li>
-                            <li><a href="#Link4" className="hover:text-blue-300">Link4</a></li>
+                            <li><a href="#Link1" className="hover:text-white">Link1</a></li>
+                            <li><a href="#Link2" className="hover:text-white">Link2</a></li>
+                            <li><a href="#Link3" className="hover:text-white">Link3</a></li>
+                            <li><a href="#Link4" className="hover:text-white">Link4</a></li>
                         </ul>
                     </div>
 
@@ -409,7 +398,7 @@ export default function Home() {
                 </div>
             </footer>
 
-            <footer style={{ backgroundColor: '#A59D84' }} className="text-black py-6">
+            <footer style={{ backgroundColor: '#A59D84' }} className="text-[#493628] py-6">
                 <div className="responsive-wrapper container mx-auto text-left">
                     <p> © 2024 — PT Ligkar Kabel Telekomunikasi.</p>
                 </div>
