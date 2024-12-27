@@ -130,7 +130,7 @@ export default function Home() {
                 </section>
 
                 {/* About Section */}
-                <section className="py-20 bg-gray-50">
+                <section className="py-20 bg-white">
                     <div className="container mx-auto px-6">
                         <div className="grid grid-cols-1 md:grid-cols-4">
                             {/* Kolom Kiri: Informasi Utama */}
@@ -253,12 +253,10 @@ export default function Home() {
                             Obcaecati aspernatur placeat fuga perspiciatis
                             inventore?
                         </p>
-                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                        <div className="border-b-2 border-green-500"></div>
+                        <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
                             {/* Card 1 */}
-                            <div
-                                className="bg-white shadow-lg rounded-lg p-6 transform transition-transform duration-300 hover:scale-105 hover:shadow-[0_4px_20px_rgba(34,197,94,0.5)]
-"
-                            >
+                            <div className="bg-white shadow-lg rounded-lg p-6 transform transition-transform duration-300 hover:scale-105 hover:shadow-[0_4px_20px_rgba(34,197,94,0.5)]">
                                 <div className="flex justify-center mb-4">
                                     <img
                                         src="/img/service/internet.png"
@@ -286,10 +284,7 @@ export default function Home() {
                             </div>
 
                             {/* Card 2 */}
-                            <div
-                                className="bg-white shadow-lg rounded-lg p-6 transform transition-transform duration-300 hover:scale-105 hover:shadow-[0_4px_20px_rgba(34,197,94,0.5)]
-"
-                            >
+                            <div className="bg-white shadow-lg rounded-lg p-6 transform transition-transform duration-300 hover:scale-105 hover:shadow-[0_4px_20px_rgba(34,197,94,0.5)]">
                                 <div className="flex justify-center mb-4">
                                     <img
                                         src="/img/service/speed.png"
@@ -348,10 +343,7 @@ export default function Home() {
                             </div>
 
                             {/* Card 4 */}
-                            <div
-                                className="bg-white shadow-lg rounded-lg p-6 transform transition-transform duration-300 hover:scale-105 hover:shadow-[0_4px_20px_rgba(34,197,94,0.5)]
-"
-                            >
+                            <div className="bg-white shadow-lg rounded-lg p-6 transform transition-transform duration-300 hover:scale-105 hover:shadow-[0_4px_20px_rgba(34,197,94,0.5)]">
                                 <div className="flex justify-center mb-4">
                                     <img
                                         src="/img/service/datacenter.png"
