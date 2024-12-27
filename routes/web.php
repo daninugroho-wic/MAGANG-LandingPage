@@ -12,3 +12,9 @@ Route::get('/', function () {
         'message' => 'Hello from Laravel + Inertia!',
     ]);
 });
+
+Route::get('/contact', function () {
+    return Inertia::render('Contact', [
+        'message' => 'Hello from Laravel + Inertia!',
+    ]);
+});
