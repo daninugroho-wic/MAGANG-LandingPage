@@ -3,7 +3,7 @@ import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";
 import React from "react";
-import Navbar from "./components/Navbar"; 
+import Navbar from "./components/Navbar";
 
 export default function Home() {
     return (
@@ -12,11 +12,6 @@ export default function Home() {
             <Navbar />
             {/* Body */}
             <main className="flex-1">
-            <section id="home">Home Section</section>
-                <section id="sejarah">Sejarah Section</section>
-                <section id="visi">Visi & Misi Section</section>
-                <section id="hubungi">Hubungi Section</section>
-                <section id="esg">ESG Section</section>
                 {/* Hero Section */}
                 <section
                     id="home"
