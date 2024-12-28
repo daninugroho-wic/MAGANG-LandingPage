@@ -26,27 +26,27 @@ const Footer = () => {
                         </h4>
                         <ul className="space-y-2 text-sm text-gray-600">
                             <li>
-                                <a href="#" className="hover:text-blue-600">
+                                <a href="#" className="hover:text-green-500">
                                     About Us
                                 </a>
                             </li>
                             <li>
-                                <a href="#" className="hover:text-blue-600">
+                                <a href="#" className="hover:text-green-500">
                                     More Search
                                 </a>
                             </li>
                             <li>
-                                <a href="#" className="hover:text-blue-600">
+                                <a href="#" className="hover:text-green-500">
                                     Blog
                                 </a>
                             </li>
                             <li>
-                                <a href="#" className="hover:text-blue-600">
+                                <a href="#" className="hover:text-green-500">
                                     Testimonials
                                 </a>
                             </li>
                             <li>
-                                <a href="#" className="hover:text-blue-600">
+                                <a href="#" className="hover:text-green-500">
                                     Events
                                 </a>
                             </li>
@@ -60,22 +60,22 @@ const Footer = () => {
                         </h4>
                         <ul className="space-y-2 text-sm text-gray-600">
                             <li>
-                                <a href="#" className="hover:text-blue-600">
+                                <a href="#" className="hover:text-green-500">
                                     Services
                                 </a>
                             </li>
                             <li>
-                                <a href="#" className="hover:text-blue-600">
+                                <a href="#" className="hover:text-green-500">
                                     Supports
                                 </a>
                             </li>
                             <li>
-                                <a href="#" className="hover:text-blue-600">
+                                <a href="#" className="hover:text-green-500">
                                     Terms & Condition
                                 </a>
                             </li>
                             <li>
-                                <a href="#" className="hover:text-blue-600">
+                                <a href="#" className="hover:text-green-500">
                                     Privacy Policy
                                 </a>
                             </li>
@@ -89,27 +89,27 @@ const Footer = () => {
                         </h4>
                         <ul className="space-y-2 text-sm text-gray-600">
                             <li>
-                                <a href="#" className="hover:text-blue-600">
+                                <a href="#" className="hover:text-green-500">
                                     Brands List
                                 </a>
                             </li>
                             <li>
-                                <a href="#" className="hover:text-blue-600">
+                                <a href="#" className="hover:text-green-500">
                                     Order
                                 </a>
                             </li>
                             <li>
-                                <a href="#" className="hover:text-blue-600">
+                                <a href="#" className="hover:text-green-500">
                                     Return & Exchange
                                 </a>
                             </li>
                             <li>
-                                <a href="#" className="hover:text-blue-600">
+                                <a href="#" className="hover:text-green-500">
                                     Fashion List
                                 </a>
                             </li>
                             <li>
-                                <a href="#" className="hover:text-blue-600">
+                                <a href="#" className="hover:text-green-500">
                                     Blog
                                 </a>
                             </li>
@@ -125,7 +125,7 @@ const Footer = () => {
                             <li>
                                 <a
                                     href="tel:+919999999999"
-                                    className="hover:text-blue-600"
+                                    className="hover:text-green-500"
                                 >
                                     +62 899-106-6262
                                 </a>
@@ -133,7 +133,7 @@ const Footer = () => {
                             <li>
                                 <a
                                     href="info@maxnetplus.id"
-                                    className="hover:text-blue-600"
+                                    className="hover:text-green-500"
                                 >
                                     info@maxnetplus.id
                                 </a>
@@ -142,25 +142,25 @@ const Footer = () => {
                         <div className="flex justify-center md:justify-start space-x-4">
                             <a
                                 href="#"
-                                className="text-gray-500 hover:text-blue-600"
+                                className="text-gray-500 hover:text-green-500"
                             >
                                 <i className="fab fa-facebook"></i>
                             </a>
                             <a
                                 href="#"
-                                className="text-gray-500 hover:text-blue-600"
+                                className="text-gray-500 hover:text-green-500"
                             >
                                 <i className="fab fa-google"></i>
                             </a>
                             <a
                                 href="#"
-                                className="text-gray-500 hover:text-blue-600"
+                                className="text-gray-500 hover:text-green-500"
                             >
                                 <i className="fab fa-twitter"></i>
                             </a>
                             <a
                                 href="#"
-                                className="text-gray-500 hover:text-blue-600"
+                                className="text-gray-500 hover:text-green-500"
                             >
                                 <i className="fab fa-instagram"></i>
                             </a>
@@ -176,13 +176,13 @@ const Footer = () => {
                         © Copyright Maxnet+ By KabelTelekom. All Rights Reserved
                     </p>
                     <div className="flex justify-center space-x-4 mt-2">
-                        <a href="#" className="hover:text-white">
+                        <a href="#" className="hover:text-green-500">
                             FAQ
                         </a>
-                        <a href="#" className="hover:text-white">
+                        <a href="#" className="hover:text-green-500">
                             Privacy
                         </a>
-                        <a href="#" className="hover:text-white">
+                        <a href="#" className="hover:text-green-500">
                             Terms & Condition
                         </a>
                     </div>

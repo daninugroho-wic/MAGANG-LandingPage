@@ -39,7 +39,7 @@ export default function Home() {
                             >
                                 <div className="text-center">
                                     <h1 className="text-7xl font-bold text-white mb-4">
-                                        Welcome to My Website
+                                        Welcome to Maxnet
                                     </h1>
                                     <p className="text-lg text-blue-700 mb-6">
                                         Nama saya Dani, dan ini adalah landing
@@ -130,19 +130,24 @@ export default function Home() {
                 </section>
 
                 {/* About Section */}
+
                 <section className="py-20 bg-white">
+                    <h3 className="text-3xl font-bold text-center text-gray-800 mb-20">
+                        Sekilas Informasi
+                    </h3>
                     <div className="container mx-auto px-6">
                         <div className="grid grid-cols-1 md:grid-cols-4">
                             {/* Kolom Kiri: Informasi Utama */}
                             <div className="bg-green-500 text-white p-[30%]">
                                 <h2 className="text-3xl font-bold mb-4">
-                                    Why Choose Our Products?
+                                    Kenapa Memilih Produk Kami ?
                                 </h2>
                                 <p className="mb-6">
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua.
-                                    Duis aute irure dolor in reprehenderit.
+                                    "Kami berkomitmen memberikan solusi terbaik
+                                    untuk kebutuhan Anda dengan kualitas premium
+                                    dan layanan yang terpercaya. Pilih produk
+                                    kami untuk kenyamanan, efisiensi, dan
+                                    kepuasan yang maksimal."
                                 </p>
                                 <a
                                     href="#"
@@ -153,7 +158,7 @@ export default function Home() {
                             </div>
 
                             {/* Kolom-Kolom Kanan */}
-                            <div className="bg-[#AAD9BB] p-8 text-center">
+                            <div className="p-8 text-center bg-[url('/img/p1.png')] bg-cover bg-full">
                                 <div className="mb-4">
                                     <div className="bg-green-100 rounded-full p-4 inline-block">
                                         <svg
@@ -173,15 +178,19 @@ export default function Home() {
                                     </div>
                                 </div>
                                 <h3 className="text-xl font-bold mb-2">
-                                    Corporis Voluptates
+                                    Kecepatan Tanpa Batas
                                 </h3>
                                 <p className="text-gray-600">
-                                    Consequuntur sunt aut quasi enim aliquam
-                                    quae harum pariatur.
+                                    "Didesain khusus untuk memberikan performa
+                                    optimal tanpa lag, produk kami memastikan
+                                    pengalaman gaming Anda berjalan lancar
+                                    bahkan di momen paling intens!. Fitur ini
+                                    sudah dilengkapi dengan teknologi
+                                    anti-buffering untuk gaming non-stop."
                                 </p>
                             </div>
 
-                            <div className="bg-[#AAD9BB] p-8 text-center">
+                            <div className="p-8 text-center bg-[url('/img/p2.png')] bg-cover bg-full border-l-2 border-green-500">
                                 <div className="mb-4">
                                     <div className="bg-green-100 rounded-full p-4 inline-block">
                                         <svg
@@ -201,15 +210,17 @@ export default function Home() {
                                     </div>
                                 </div>
                                 <h3 className="text-xl font-bold mb-2">
-                                    Ullamco Labore
+                                    Solusi Untuk Bisnis Anda
                                 </h3>
                                 <p className="text-gray-600">
-                                    Exceptuer sint occaecat cupidatat non
-                                    proident sunt in culpa.
+                                    "Tingkatkan produktivitas dengan layanan
+                                    kami yang dapat diintegrasikan langsung ke
+                                    workflow bisnis Anda. Hemat waktu dan biaya
+                                    dengan solusi yang dirancang khusus untuk
+                                    perusahaan Anda."
                                 </p>
                             </div>
-
-                            <div className="bg-[#AAD9BB] p-8 text-center">
+                            <div className="p-8 text-center bg-[url('/img/p3.png')] bg-cover bg-full border-l-2 border-green-500">
                                 <div className="mb-4">
                                     <div className="bg-green-100 rounded-full p-4 inline-block">
                                         <svg
@@ -229,11 +240,14 @@ export default function Home() {
                                     </div>
                                 </div>
                                 <h3 className="text-xl font-bold mb-2">
-                                    Labore Consequatur
+                                    Inovasi dan Teknologi Modern
                                 </h3>
                                 <p className="text-gray-600">
-                                    Aut suscipit aut cum nemo deleniti omnis
-                                    doloribus ut maiores.
+                                    "Kami terus berinovasi dengan teknologi
+                                    terbaru untuk memastikan Anda selalu
+                                    mendapatkan yang terbaik. Dengan kualitas
+                                    premium dan fitur canggih, produk kami siap
+                                    mendukung Anda dalam berbagai kebutuhan."
                                 </p>
                             </div>
                         </div>
@@ -312,10 +326,7 @@ export default function Home() {
                             </div>
 
                             {/* Card 3 */}
-                            <div
-                                className="bg-white shadow-lg rounded-lg p-6 transform transition-transform duration-300 hover:scale-105 hover:shadow-[0_4px_20px_rgba(34,197,94,0.5)]
-"
-                            >
+                            <div className="bg-white shadow-lg rounded-lg p-6 transform transition-transform duration-300 hover:scale-105 hover:shadow-[0_4px_20px_rgba(34,197,94,0.5)]">
                                 <div className="flex justify-center mb-4">
                                     <img
                                         src="/img/service/document.png"
