@@ -63,30 +63,32 @@ const Navbar = () => {
                 <div className="flex justify-center w-full mb-4">
                     {!isScrolled && (
                         <img
-                            src="img/maxnet.png"
+                            src="img/semesta1.png"
                             alt="Logo"
-                            className="logo h-10 sm:h-12 md:h-20 w-auto transition-all duration-300"
+                        className="hidden md:block logo h-10 sm:h-12 md:h-20 w-auto transition-all duration-300"
                         />
                     )}
                 </div>
+
+                
                 {/* Navigation */}
                 <nav className="hidden md:flex space-x-8 items-center">
                     <a
                         href="/"
-                        className={`relative font-semibold transition duration-300 transform hover:scale-105 hover:text-green-500 ${
-                            activeSection === "home" ? "text-green-500" : ""
+                        className={`relative font-semibold transition duration-300 transform hover:scale-105 hover:text-blue-500 ${
+                            activeSection === "home" ? "text-blue-500" : ""
                         }`}
                     >
                         Home
                         {activeSection === "home" && (
-                            <span className="absolute top-0 left-0 w-full h-[10%] bg-green-500"></span>
+                            <span className="absolute top-0 left-0 w-full h-[10%] bg-blue-500"></span>
                         )}
                     </a>
                     <div className="relative group">
                         <button
-                            className={`relative font-semibold transition duration-300 transform hover:scale-105 hover:text-green-500 ${
+                            className={`relative font-semibold transition duration-300 transform hover:scale-105 hover:text-blue-500 ${
                                 ["sejarah", "visi"].includes(activeSection)
-                                    ? "text-green-500"
+                                    ? "text-blue-500"
                                     : ""
                             }`}
                         >
@@ -97,7 +99,7 @@ const Navbar = () => {
                                 href="/sejarah"
                                 className={`block px-4 py-2 transition duration-300 ${
                                     activeSection === "sejarah"
-                                        ? "text-green-500 font-bold"
+                                        ? "text-blue-500 font-bold"
                                         : "text-gray-500 hover:bg-gray-100"
                                 }`}
                             >
@@ -107,7 +109,7 @@ const Navbar = () => {
                                 href="/visi"
                                 className={`block px-4 py-2 transition duration-300 ${
                                     activeSection === "visi"
-                                        ? "text-green-500 font-bold"
+                                        ? "text-blue-500 font-bold"
                                         : "text-gray-500 hover:bg-gray-100"
                                 }`}
                             >
@@ -117,33 +119,39 @@ const Navbar = () => {
                     </div>
                     <a
                         href="/contact"
-                        className={`relative font-semibold transition duration-300 transform hover:scale-105 hover:text-green-500 ${
-                            activeSection === "hubungi" ? "text-green-500" : ""
+                        className={`relative font-semibold transition duration-300 transform hover:scale-105 hover:text-blue-500 ${
+                            activeSection === "hubungi" ? "text-blue-500" : ""
                         }`}
                     >
                         Contact Us
                         {activeSection === "hubungi" && (
-                            <span className="absolute top-0 left-0 w-full h-[10%] bg-green-500"></span>
+                            <span className="absolute top-0 left-0 w-full h-[10%] bg-blue-500"></span>
                         )}
                     </a>
                     <a
                         href="/layanan"
-                        className={`relative font-semibold transition duration-300 transform hover:scale-105 hover:text-green-500 ${
-                            activeSection === "esg" ? "text-green-500" : ""
+                        className={`relative font-semibold transition duration-300 transform hover:scale-105 hover:text-blue-500 ${
+                            activeSection === "esg" ? "text-blue-500" : ""
                         }`}
                     >
                         Layanan
                         {activeSection === "esg" && (
-                            <span className="absolute top-0 left-0 w-full h-[10%] bg-green-500"></span>
+                            <span className="absolute top-0 left-0 w-full h-[10%] bg-blue-500"></span>
                         )}
                     </a>
                 </nav>
 
                 {/* Mobile Menu Toggle */}
-                <div className="md:hidden flex items-center">
+                <div className="md:hidden flex items-center justify-between w-full px-4">
+                    <img
+                        src="img/semesta1.png"
+                        alt="Mitratel"
+                        className="h-10 w-auto"
+                    />
+                    
                     <button
                         onClick={() => setMobileMenuOpen(!isMobileMenuOpen)}
-                        className="text-black focus:outline-none"
+                        className="text-black focus:outline-none p-2 border rounded-md"
                     >
                         <svg
                             className="h-6 w-6"
@@ -169,25 +177,25 @@ const Navbar = () => {
                     <nav className="flex flex-col bg-blue py-2 px-9 space-y-2 shadow-lg text-right">
                         <a
                             href="/"
-                            className="hover:text-green-500 font-semibold transition duration-300"
+                            className="hover:text-blue-500 font-semibold transition duration-300"
                         >
                             Home
                         </a>
                         <a
                             href="/about"
-                            className="hover:text-green-500 font-semibold transition duration-300"
+                            className="hover:text-blue-500 font-semibold transition duration-300"
                         >
                             About Us
                         </a>
                         <a
                             href="/contact"
-                            className="hover:text-green-500 font-semibold transition duration-300"
+                            className="hover:text-blue-500 font-semibold transition duration-300"
                         >
                             Contact Us
                         </a>
                         <a
                             href="/layanan"
-                            className="hover:text-green-500 font-semibold transition duration-300"
+                            className="hover:text-blue-500 font-semibold transition duration-300"
                         >
                             Layanan
                         </a>

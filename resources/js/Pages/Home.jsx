@@ -39,7 +39,7 @@ export default function Home() {
                             >
                                 <div className="text-center">
                                     <h1 className="text-7xl font-bold text-white mb-4">
-                                        Welcome to Maxnet
+                                        Welcome to Semesta
                                     </h1>
                                     <p className="text-lg text-blue-700 mb-6">
                                         Nama saya Dani, dan ini adalah landing
@@ -85,7 +85,7 @@ export default function Home() {
                             >
                                 <div className="text-center">
                                     <h1 className="text-7xl font-bold text-white mb-4">
-                                        Join Us Today
+                                        Join Us "Pusat Kreasi"
                                     </h1>
                                     <p className="text-lg text-blue-700 mb-6">
                                         Bergabunglah dengan komunitas kami dan
@@ -133,248 +133,235 @@ export default function Home() {
 
                 <section className="py-20 bg-white">
                     <h3 className="text-3xl font-bold text-center text-gray-800 mb-20">
-                        Sekilas Informasi
+                        Our Exciting Service Offerings
                     </h3>
-                    <div className="container mx-auto px-6">
+                    <div className="container mx-auto">
                         <div className="grid grid-cols-1 md:grid-cols-4">
                             {/* Kolom Kiri: Informasi Utama */}
-                            <div className="bg-green-500 text-white p-[30%]">
+                            <div className="bg-blue-500 text-gray-600 text-justify text-white p-[15%]">
                                 <h2 className="text-3xl font-bold mb-4">
-                                    Kenapa Memilih Produk Kami ?
+                                    Why Us ?
                                 </h2>
-                                <p className="mb-6">
-                                    "Kami berkomitmen memberikan solusi terbaik
-                                    untuk kebutuhan Anda dengan kualitas premium
-                                    dan layanan yang terpercaya. Pilih produk
-                                    kami untuk kenyamanan, efisiensi, dan
-                                    kepuasan yang maksimal."
+                                <p>
+                                    <p className="mb-6">
+                                        We Are Expertise in this job,
+                                    </p>
+                                    <p className="mb-6">
+                                        We are a team of seasoned professionals
+                                        with extensive expertise in the field of
+                                        fiber optic installation and
+                                        maintenance.
+                                    </p>
+                                    <p className="mb-6">
+                                        Our skilled technicians bring years of
+                                        experience, ensuring top-notch service
+                                        and optimal performance for your network
+                                        infrastructure.
+                                    </p>
+                                    <p className="mb-6">
+                                        We understand that every business has
+                                        unique needs. Our team works closely
+                                        with clients to tailor fiber optic
+                                        solutions that align with your specific
+                                        requirements. Whether it's a small-
+                                        scale installation or a large-scale
+                                        network, we've got you covered.
+                                    </p>
                                 </p>
                                 <a
                                     href="#"
-                                    className="inline-block bg-green-600 hover:bg-green-700 text-white py-2 px-4 rounded transition"
+                                    className="inline-block bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded transition"
                                 >
                                     Learn More &rarr;
                                 </a>
                             </div>
 
                             {/* Kolom-Kolom Kanan */}
-                            <div className="p-8 text-center bg-[url('/img/p1.png')] bg-cover bg-full">
+                            <div className="bg-blue-50 p-8 text-center bg-[url('/img/p1.png')] bg-cover bg-full">
                                 <div className="mb-4">
-                                    <div className="bg-green-100 rounded-full p-4 inline-block">
-                                        <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            className="h-8 w-8 text-green-500"
-                                            fill="none"
-                                            viewBox="0 0 24 24"
-                                            stroke="currentColor"
-                                        >
-                                            <path
-                                                strokeLinecap="round"
-                                                strokeLinejoin="round"
-                                                strokeWidth="2"
-                                                d="M9 12h6m2 6H7m12-6a9 9 0 11-18 0 9 9 0 0118 0z"
-                                            />
-                                        </svg>
+                                    <div className="bg-blue-100 rounded-full p-4 inline-block">
+                                        <img
+                                            src="/img/service/fiber1.png"
+                                            alt="Gambar"
+                                            className="h-8 w-8 object-cover"
+                                        />
                                     </div>
                                 </div>
                                 <h3 className="text-xl font-bold mb-2">
-                                    Kecepatan Tanpa Batas
+                                    Fiber Optic Instalation
                                 </h3>
-                                <p className="text-gray-600">
-                                    "Didesain khusus untuk memberikan performa
-                                    optimal tanpa lag, produk kami memastikan
-                                    pengalaman gaming Anda berjalan lancar
-                                    bahkan di momen paling intens!. Fitur ini
-                                    sudah dilengkapi dengan teknologi
-                                    anti-buffering untuk gaming non-stop."
+                                <p className="text-gray-600 text-justify">
+                                    Trust our expert team to handle the seamless
+                                    installation of fiber optic networks. From
+                                    planning and design to implementation, we
+                                    ensure a smooth transition to high-speed,
+                                    reliable connectivity.
+                                </p>
+                                <p className="text-gray-600 text-justify">
+                                    Quality is at the core of everything we do.
+                                    From the selection of materials to the
+                                    execution of projects, we maintain the
+                                    highest standards to deliver durable and
+                                    efficient fiber optic solutions. Your
+                                    satisfaction is our priority.
                                 </p>
                             </div>
 
-                            <div className="p-8 text-center bg-[url('/img/p2.png')] bg-cover bg-full border-l-2 border-green-500">
+                            <div className="bg-blue-50 p-8 text-center bg-[url('/img/p2.png')] bg-cover bg-full border-l-2 border-blue-500">
                                 <div className="mb-4">
-                                    <div className="bg-green-100 rounded-full p-4 inline-block">
-                                        <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            className="h-8 w-8 text-green-500"
-                                            fill="none"
-                                            viewBox="0 0 24 24"
-                                            stroke="currentColor"
-                                        >
-                                            <path
-                                                strokeLinecap="round"
-                                                strokeLinejoin="round"
-                                                strokeWidth="2"
-                                                d="M12 8c2.28 0 4.08 1.82 4.08 4.08S14.28 16.16 12 16.16 7.92 14.34 7.92 12.08 9.72 8 12 8z"
-                                            />
-                                        </svg>
+                                    <div className="bg-blue-100 rounded-full p-4 inline-block">
+                                        <img
+                                            src="/img/service/design1.png"
+                                            alt="Gambar"
+                                            className="h-8 w-8 object-cover"
+                                        />
                                     </div>
                                 </div>
                                 <h3 className="text-xl font-bold mb-2">
-                                    Solusi Untuk Bisnis Anda
+                                    Design And Maintenance
                                 </h3>
-                                <p className="text-gray-600">
-                                    "Tingkatkan produktivitas dengan layanan
-                                    kami yang dapat diintegrasikan langsung ke
-                                    workflow bisnis Anda. Hemat waktu dan biaya
-                                    dengan solusi yang dirancang khusus untuk
-                                    perusahaan Anda."
+                                <p className="text-gray-600 text-justify">
+                                    Leverage our expertise in network design to
+                                    create a customized fiber optic solution
+                                    that aligns with your business requirements.
+                                    Our consultation services guide you through
+                                    the process, helping you make informed
+                                    decisions.
+                                </p>
+                                <p className="text-gray-600 text-justify">
+                                    Stay ahead in the digital era with our use
+                                    of cutting-edge technology. We leverage the
+                                    latest advancements in fiber optic solutions
+                                    to provide you with reliable and
+                                    future-proof installations, ensuring your
+                                    business stays connected and competitive.
                                 </p>
                             </div>
-                            <div className="p-8 text-center bg-[url('/img/p3.png')] bg-cover bg-full border-l-2 border-green-500">
+                            <div className="bg-blue-50 p-8 text-center bg-[url('/img/p3.png')] bg-cover bg-full border-l-2 border-blue-500">
                                 <div className="mb-4">
-                                    <div className="bg-green-100 rounded-full p-4 inline-block">
-                                        <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            className="h-8 w-8 text-green-500"
-                                            fill="none"
-                                            viewBox="0 0 24 24"
-                                            stroke="currentColor"
-                                        >
-                                            <path
-                                                strokeLinecap="round"
-                                                strokeLinejoin="round"
-                                                strokeWidth="2"
-                                                d="M5 12h14M12 5l7 7-7 7"
-                                            />
-                                        </svg>
+                                    <div className="bg-blue-100 rounded-full p-4 inline-block">
+                                        <img
+                                            src="/img/service/support1.png"
+                                            alt="Gambar"
+                                            className="h-8 w-8 object-cover"
+                                        />
                                     </div>
                                 </div>
                                 <h3 className="text-xl font-bold mb-2">
-                                    Inovasi dan Teknologi Modern
+                                    Maintenance And Support
                                 </h3>
-                                <p className="text-gray-600">
-                                    "Kami terus berinovasi dengan teknologi
-                                    terbaru untuk memastikan Anda selalu
-                                    mendapatkan yang terbaik. Dengan kualitas
-                                    premium dan fitur canggih, produk kami siap
-                                    mendukung Anda dalam berbagai kebutuhan."
+                                <p className="text-gray-600 text-justify">
+                                    Ensure the performance longevity of and
+                                    optimal your fiber optic infrastructure with
+                                    our dedicated maintenance and support
+                                    services. We offer regular check-ups,
+                                    troubleshooting, and swift resolutions to
+                                    keep your network running at its best.
+                                </p>
+                                <p className="text-gray-600 text-justify">
+                                    In times of unexpected outages or issues,
+                                    our rapid response team is ready to handle
+                                    emergency repairs. Minimize downtime and
+                                    disruptions with our prompt and efficient
+                                    emergency repair services.
                                 </p>
                             </div>
                         </div>
                     </div>
                 </section>
 
-                <section id="services" className="py-20 bg-white">
-                    <div className="container mx-auto text-center">
-                        <h3 className="text-3xl font-bold text-gray-800 mb-2">
-                            Services
+                <section id="services" className="py-20">
+                    <div className="container mx-auto text-center max-w-6xl">
+                        {/* Judul Section */}
+                        <h3 className="text-4xl font-extrabold text-gray-800 mb-6">
+                            Our Services
                         </h3>
-                        <p className="text-gray-600 font-light mb-10">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Laudantium delectus temporibus aspernatur
-                            error doloribus. Explicabo facilis, ducimus
-                            laudantium fuga non a numquam laborum dolore.
-                            Obcaecati aspernatur placeat fuga perspiciatis
-                            inventore?
+                        <p className="text-gray-600 font-light mb-12 max-w-2xl mx-auto">
+                            Explore the best solutions designed to enhance your
+                            business with top-notch quality and seamless
+                            integration into your workflow.
                         </p>
-                        <div className="border-b-2 border-green-500"></div>
-                        <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+
+                        <div className="border-b-4 border-blue-500 w-16 mx-auto mb-12"></div>
+
+                        {/* Grid Konten */}
+                        <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
                             {/* Card 1 */}
-                            <div className="bg-white shadow-lg rounded-lg p-6 transform transition-transform duration-300 hover:scale-105 hover:shadow-[0_4px_20px_rgba(34,197,94,0.5)]">
-                                <div className="flex justify-center mb-4">
+                            <div
+                                className="bg-white shadow-md rounded-lg p-8 transition-transform duration-300 hover:scale-105 hover:shadow-[0_4px_20px_rgba(59,130,246,0.5)]
+"
+                            >
+                                <div className="flex justify-center mb-6">
                                     <img
-                                        src="/img/service/internet.png"
+                                        src="/img/service/fiber.png"
                                         alt="Service 1 Icon"
-                                        className="w-12 h-12"
+                                        className="w-16 h-16"
                                     />
                                 </div>
-                                <h4 className="text-xl font-bold text-gray-800 mb-2">
-                                    Global Peer Internet Access
+                                <h4 className="text-xl font-semibold text-gray-800 mb-4">
+                                    Fiber Optic Installation
                                 </h4>
-                                <p className="text-sm text-gray-600 mb-4">
-                                    Lorem ipsum, dolor sit amet consectetur
-                                    adipisicing elit. Unde vel, vero earum qui
-                                    id minus inventore, nemo eum similique
-                                    labore provident illum, sapiente nesciunt
-                                    quibusdam minima! Odit excepturi illum
-                                    veritatis.
+                                <p className="text-gray-600 mb-4">
+                                    High-speed internet solutions tailored for
+                                    your needs.
                                 </p>
                                 <a
                                     href="#"
-                                    className="text-green-600 font-semibold text-sm"
+                                    className="text-blue-600 font-semibold text-sm hover:underline"
                                 >
                                     Read more &rarr;
                                 </a>
                             </div>
 
                             {/* Card 2 */}
-                            <div className="bg-white shadow-lg rounded-lg p-6 transform transition-transform duration-300 hover:scale-105 hover:shadow-[0_4px_20px_rgba(34,197,94,0.5)]">
-                                <div className="flex justify-center mb-4">
+                            <div
+                                className="bg-white shadow-md rounded-lg p-8 transition-transform duration-300 hover:scale-105 hover:shadow-[0_4px_20px_rgba(59,130,246,0.5)]
+"
+                            >
+                                <div className="flex justify-center mb-6">
                                     <img
-                                        src="/img/service/speed.png"
+                                        src="/img/service/design.png"
                                         alt="Service 2 Icon"
-                                        className="w-12 h-12"
+                                        className="w-16 h-16"
                                     />
                                 </div>
-                                <h4 className="text-xl font-bold text-gray-800 mb-2">
-                                    High Speed Internet Access
+                                <h4 className="text-xl font-semibold text-gray-800 mb-4">
+                                    Design And Maintenance
                                 </h4>
-                                <p className="text-sm text-gray-600 mb-4">
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Repudiandae pariatur quia
-                                    dolor tempora non explicabo ratione rerum
-                                    repellat qui aliquam, commodi dolorem
-                                    ducimus cumque possimus nihil error
-                                    laudantium quaerat ab!
+                                <p className="text-gray-600 mb-4">
+                                    Reliable system design and continuous
+                                    maintenance for seamless operations.
                                 </p>
                                 <a
                                     href="#"
-                                    className="text-green-600 font-semibold text-sm"
+                                    className="text-blue-600 font-semibold text-sm hover:underline"
                                 >
                                     Read more &rarr;
                                 </a>
                             </div>
 
                             {/* Card 3 */}
-                            <div className="bg-white shadow-lg rounded-lg p-6 transform transition-transform duration-300 hover:scale-105 hover:shadow-[0_4px_20px_rgba(34,197,94,0.5)]">
-                                <div className="flex justify-center mb-4">
+                            <div
+                                className="bg-white shadow-md rounded-lg p-8 transition-transform duration-300 hover:scale-105 hover:shadow-[0_4px_20px_rgba(59,130,246,0.5)]
+"
+                            >
+                                <div className="flex justify-center mb-6">
                                     <img
-                                        src="/img/service/document.png"
+                                        src="/img/service/support.png"
                                         alt="Service 3 Icon"
-                                        className="w-12 h-12"
+                                        className="w-16 h-16"
                                     />
                                 </div>
-                                <h4 className="text-xl font-bold text-gray-800 mb-2">
-                                    Domestic CDN Connectivity
+                                <h4 className="text-xl font-semibold text-gray-800 mb-4">
+                                    Maintenance And Support
                                 </h4>
-                                <p className="text-sm text-gray-600 mb-4">
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Consequatur dolorum
-                                    expedita quam repellendus blanditiis
-                                    perferendis labore iusto, nemo iste non sed
-                                    dolor maxime quo temporibus dignissimos
-                                    eveniet. Nemo, maiores dicta.
+                                <p className="text-gray-600 mb-4">
+                                    Comprehensive support services to keep your
+                                    systems running smoothly.
                                 </p>
                                 <a
                                     href="#"
-                                    className="text-green-600 font-semibold text-sm"
-                                >
-                                    Read more &rarr;
-                                </a>
-                            </div>
-
-                            {/* Card 4 */}
-                            <div className="bg-white shadow-lg rounded-lg p-6 transform transition-transform duration-300 hover:scale-105 hover:shadow-[0_4px_20px_rgba(34,197,94,0.5)]">
-                                <div className="flex justify-center mb-4">
-                                    <img
-                                        src="/img/service/datacenter.png"
-                                        alt="Service 4 Icon"
-                                        className="w-12 h-12"
-                                    />
-                                </div>
-                                <h4 className="text-xl font-bold text-gray-800 mb-2">
-                                    Colocation Service Datacenter
-                                </h4>
-                                <p className="text-sm text-gray-600 mb-4">
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Nihil quae eligendi aut
-                                    commodi id deserunt voluptatum sit minus
-                                    odit dolorum, architecto ab, ipsum repellat
-                                    cupiditate veniam est nam. Quod, dicta.
-                                </p>
-                                <a
-                                    href="#"
-                                    className="text-green-600 font-semibold text-sm"
+                                    className="text-blue-600 font-semibold text-sm hover:underline"
                                 >
                                     Read more &rarr;
                                 </a>
@@ -486,7 +473,7 @@ export default function Home() {
                                             type="text"
                                             id="name"
                                             name="name"
-                                            className="mt-2 block w-full rounded-lg border border-gray-300 bg-gray-50 px-4 py-2 text-gray-800 shadow-sm focus:ring focus:ring-green-100 focus:outline-none focus:border-green-500 transition duration-300"
+                                            className="mt-2 block w-full rounded-lg border border-gray-300 bg-gray-50 px-4 py-2 text-gray-800 shadow-sm focus:ring focus:ring-blue-100 focus:outline-none focus:border-blue-500 transition duration-300"
                                             required
                                         />
                                     </div>
@@ -502,7 +489,7 @@ export default function Home() {
                                             type="email"
                                             id="email"
                                             name="email"
-                                            className="mt-2 block w-full rounded-lg border border-gray-300 bg-gray-50 px-4 py-2 text-gray-800 shadow-sm focus:ring focus:ring-green-100 focus:outline-none focus:border-green-500 transition duration-300"
+                                            className="mt-2 block w-full rounded-lg border border-gray-300 bg-gray-50 px-4 py-2 text-gray-800 shadow-sm focus:ring focus:ring-blue-100 focus:outline-none focus:border-blue-500 transition duration-300"
                                             required
                                         />
                                     </div>
@@ -521,7 +508,7 @@ export default function Home() {
                                             type="tel"
                                             id="phone"
                                             name="phone"
-                                            className="mt-2 block w-full rounded-lg border border-gray-300 bg-gray-50 px-4 py-2 text-gray-800 shadow-sm focus:ring focus:ring-green-100 focus:outline-none focus:border-green-500 transition duration-300"
+                                            className="mt-2 block w-full rounded-lg border border-gray-300 bg-gray-50 px-4 py-2 text-gray-800 shadow-sm focus:ring focus:ring-blue-100 focus:outline-none focus:border-blue-500 transition duration-300"
                                             required
                                         />
                                     </div>
@@ -536,7 +523,7 @@ export default function Home() {
                                             type="url"
                                             id="website"
                                             name="website"
-                                            className="mt-2 block w-full rounded-lg border border-gray-300 bg-gray-50 px-4 py-2 text-gray-800 shadow-sm focus:ring focus:ring-green-100 focus:outline-none focus:border-green-500 transition duration-300"
+                                            className="mt-2 block w-full rounded-lg border border-gray-300 bg-gray-50 px-4 py-2 text-gray-800 shadow-sm focus:ring focus:ring-blue-100 focus:outline-none focus:border-blue-500 transition duration-300"
                                         />
                                     </div>
                                 </div>
@@ -553,7 +540,7 @@ export default function Home() {
                                         id="message"
                                         name="message"
                                         rows="4"
-                                        className="mt-2 block w-full rounded-lg border border-gray-300 bg-gray-50 px-4 py-2 text-gray-800 shadow-sm focus:ring focus:ring-green-100 focus:outline-none focus:border-green-500 transition duration-300"
+                                        className="mt-2 block w-full rounded-lg border border-gray-300 bg-gray-50 px-4 py-2 text-gray-800 shadow-sm focus:ring focus:ring-blue-100 focus:outline-none focus:border-blue-500 transition duration-300"
                                         required
                                     ></textarea>
                                 </div>
@@ -562,7 +549,7 @@ export default function Home() {
                                 <div className="text-right">
                                     <button
                                         type="submit"
-                                        className="bg-blue-500 text-white px-6 py-2 rounded-md hover:bg-green-500"
+                                        className="bg-blue-500 text-white px-6 py-2 rounded-md hover:bg-blue-500"
                                     >
                                         Send Message
                                     </button>

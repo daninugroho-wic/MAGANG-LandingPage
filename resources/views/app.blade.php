@@ -5,10 +5,10 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Landing Page</title>
+    <title>Semesta</title>
     <title inertia>{{ config('app.name', 'Laravel') }}</title>
     {{-- Favicon --}}
-    <link rel="icon" href="img/iconmax.png" type="image/png">
+    <link rel="icon" href="img/iconsmsta.png" type="image/png">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
