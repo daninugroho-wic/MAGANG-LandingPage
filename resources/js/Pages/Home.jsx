@@ -11,7 +11,6 @@ export default function Home() {
         <div className="min-h-screen flex flex-col">
             {/* Navbar */}
             <Navbar />
-            {/* Body */}
             <main className="flex-1">
                 {/* Hero Section */}
                 <section
@@ -39,7 +38,7 @@ export default function Home() {
                             >
                                 <div className="text-center">
                                     <h1 className="text-7xl font-bold text-white mb-4">
-                                        Welcome to Semesta
+                                        Fiber Optic Specialist
                                     </h1>
                                     <p className="text-lg text-blue-700 mb-6">
                                         Nama saya Dani, dan ini adalah landing
@@ -62,7 +61,7 @@ export default function Home() {
                             >
                                 <div className="text-left">
                                     <h1 className="text-7xl font-bold text-white mb-4">
-                                        Explore Our Services
+                                        Instalation And Maintenance
                                     </h1>
                                     <p className="text-lg text-blue-700 mb-6">
                                         Kami menawarkan layanan terbaik untuk
@@ -549,7 +548,7 @@ export default function Home() {
                                 <div className="text-right">
                                     <button
                                         type="submit"
-                                        className="bg-blue-500 text-white px-6 py-2 rounded-md hover:bg-blue-500"
+                                        className="bg-blue-500 text-white px-6 py-2 rounded-md hover:bg-green-500"
                                     >
                                         Send Message
                                     </button>
