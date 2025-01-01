@@ -29,83 +29,81 @@ export default function Home() {
                     >
                         {/* Slide 1 */}
                         <SwiperSlide>
-  <div
-    className="h-full bg-cover bg-center flex items-center justify-center relative"
-    style={{
-      backgroundImage: "url('/img/wallpap3.jpg')",
-    }}
-  >
-    {/* Overlay gradasi */}
-    <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/70"></div>
-    {/* Konten utama */}
-    <div className="text-center z-10 px-4">
-      <h1 className="text-6xl md:text-7xl font-extrabold text-white mb-4 drop-shadow-lg">
-        Fiber Optic Specialist
-      </h1>
-      <p className="text-base md:text-lg text-white font-bold mb-6 max-w-2xl mx-auto">
-        Nama saya Dani, dan ini adalah landing page dengan Tailwind CSS yang
-        lebih menarik.
-      </p>
-      <button className="bg-blue-700 text-white px-6 py-3 rounded-full text-lg font-semibold shadow-lg hover:bg-blue-600 transition-all duration-300 hover:scale-105">
-        Get Started
-      </button>
-    </div>
-  </div>
-</SwiperSlide>
-
+                            <div
+                                className="h-full bg-cover bg-center flex items-center justify-center relative"
+                                style={{
+                                    backgroundImage: "url('/img/wallpap3.jpg')",
+                                }}
+                            >
+                                {/* Overlay gradasi */}
+                                <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/70"></div>
+                                {/* Konten utama */}
+                                <div className="text-center z-10 px-4">
+                                    <h1 className="text-6xl md:text-7xl font-extrabold text-white mb-4 drop-shadow-lg">
+                                        Fiber Optic Specialist
+                                    </h1>
+                                    <p className="text-base md:text-lg text-white font-bold mb-6 max-w-2xl mx-auto">
+                                        Teknisi spesialis fiber optik dengan
+                                        keahlian dalam instalasi dan
+                                        troubleshooting.
+                                    </p>
+                                    <button className="bg-blue-700 text-white px-6 py-3 rounded-full text-lg font-semibold shadow-lg hover:bg-blue-600 transition-all duration-300 hover:scale-105">
+                                        Get Started
+                                    </button>
+                                </div>
+                            </div>
+                        </SwiperSlide>
 
                         {/* Slide 2 */}
-<SwiperSlide>
-  <div
-    className="h-full bg-cover bg-center flex items-center justify-center relative"
-    style={{
-      backgroundImage: "url('/img/wallpap4.jpg')",
-    }}
-  >
-    {/* Overlay gradasi */}
-    <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/70"></div>
-    {/* Konten utama */}
-    <div className="text-left z-10 px-4">
-      <h1 className="text-6xl md:text-7xl font-extrabold text-white mb-4 drop-shadow-lg">
-        Installation And Maintenance
-      </h1>
-      <p className="text-base md:text-lg text-white font-bold mb-6 max-w-2xl mx-auto">
-          Kami menawarkan layanan terbaik untuk kebutuhan Anda.
-      </p>
-      <button className="bg-blue-700 text-white px-6 py-3 rounded-full text-lg font-semibold shadow-lg hover:bg-blue-600 transition-all duration-300 hover:scale-105">
-        Learn More
-      </button>
-    </div>
-  </div>
-</SwiperSlide>
+                        <SwiperSlide>
+                            <div
+                                className="h-full bg-cover bg-center flex items-center justify-center relative"
+                                style={{
+                                    backgroundImage: "url('/img/wallpap4.jpg')",
+                                }}
+                            >
+                                {/* Overlay gradasi */}
+                                <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/70"></div>
+                                {/* Konten utama */}
+                                <div className="text-left z-10 px-4">
+                                    <h1 className="text-6xl md:text-7xl font-extrabold text-white mb-4 drop-shadow-lg">
+                                        Installation And Maintenance
+                                    </h1>
+                                    <p className="text-base md:text-lg text-white font-bold mb-6 max-w-2xl mx-auto">
+                                        Instalasi dan pemeliharaan sistem fiber
+                                        optik yang handal.
+                                    </p>
+                                    <button className="bg-blue-700 text-white px-6 py-3 rounded-full text-lg font-semibold shadow-lg hover:bg-blue-600 transition-all duration-300 hover:scale-105">
+                                        Learn More
+                                    </button>
+                                </div>
+                            </div>
+                        </SwiperSlide>
 
-{/* Slide 3 */}
-<SwiperSlide>
-  <div
-    className="h-full bg-cover bg-center flex items-center justify-center relative"
-    style={{
-      backgroundImage: "url('/img/wallpap5.jpg')",
-    }}
-  >
-    {/* Overlay gradasi */}
-    <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/70"></div>
-    {/* Konten utama */}
-    <div className="text-center z-10 px-4">
-      <h1 className="text-6xl md:text-7xl font-extrabold text-white mb-4 drop-shadow-lg">
-        Join Us "Pusat Kreasi"
-      </h1>
-      <p className="text-base md:text-lg text-white font-bold mb-6 max-w-2xl mx-auto">
-
-          Bergabunglah dengan komunitas kami dan nikmati manfaatnya.
-        
-      </p>
-      <button className="bg-blue-700 text-white px-6 py-3 rounded-full text-lg font-semibold shadow-lg hover:bg-blue-600 transition-all duration-300 hover:scale-105">
-        Join Now
-      </button>
-    </div>
-  </div>
-</SwiperSlide>
-
+                        {/* Slide 3 */}
+                        <SwiperSlide>
+                            <div
+                                className="h-full bg-cover bg-center flex items-center justify-center relative"
+                                style={{
+                                    backgroundImage: "url('/img/wallpap5.jpg')",
+                                }}
+                            >
+                                {/* Overlay gradasi */}
+                                <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/70"></div>
+                                {/* Konten utama */}
+                                <div className="text-center z-10 px-4">
+                                    <h1 className="text-6xl md:text-7xl font-extrabold text-white mb-4 drop-shadow-lg">
+                                        Join Us "Pusat Kreasi"
+                                    </h1>
+                                    <p className="text-base md:text-lg text-white font-bold mb-6 max-w-2xl mx-auto">
+                                        Bergabunglah dengan pusat kreatif kami.
+                                    </p>
+                                    <button className="bg-blue-700 text-white px-6 py-3 rounded-full text-lg font-semibold shadow-lg hover:bg-blue-600 transition-all duration-300 hover:scale-105">
+                                        Join Now
+                                    </button>
+                                </div>
+                            </div>
+                        </SwiperSlide>
                     </Swiper>
                 </section>
 
