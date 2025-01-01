@@ -29,7 +29,6 @@ const Navbar = () => {
 
             setActiveSection(currentSection);
         };
-
         const checkInitialActiveSection = () => {
             const currentPath = window.location.pathname;
             const sectionMap = {
@@ -65,12 +64,11 @@ const Navbar = () => {
                         <img
                             src="img/semesta1.png"
                             alt="Logo"
-                        className="hidden md:block logo h-10 sm:h-12 md:h-20 w-auto transition-all duration-300"
+                            className="hidden md:block logo h-10 sm:h-12 md:h-20 w-auto transition-all duration-300"
                         />
                     )}
                 </div>
 
-                
                 {/* Navigation */}
                 <nav className="hidden md:flex space-x-8 items-center">
                     <a
@@ -148,7 +146,7 @@ const Navbar = () => {
                         alt="Mitratel"
                         className="h-10 w-auto"
                     />
-                    
+
                     <button
                         onClick={() => setMobileMenuOpen(!isMobileMenuOpen)}
                         className="text-black focus:outline-none p-2 border rounded-md"

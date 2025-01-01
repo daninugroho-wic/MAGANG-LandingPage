@@ -12,97 +12,106 @@ export default function Home() {
             {/* Navbar */}
             <Navbar />
             <main className="flex-1">
-                {/* Hero Section */}
                 <section
                     id="home"
                     className="h-screen flex items-center justify-center"
                 >
                     {/* Swiper Slider */}
                     <Swiper
-                        modules={[Pagination, Autoplay]} // Tambahkan Autoplay
+                        modules={[Pagination, Autoplay]}
                         pagination={{ clickable: true }}
                         autoplay={{
-                            delay: 10000, // Waktu jeda antar slide (ms)
-                            disableOnInteraction: false, // Tetap autoplay meskipun pengguna berinteraksi
+                            delay: 10000,
+                            disableOnInteraction: false,
                         }}
                         loop={true}
                         className="h-full w-full"
                     >
                         {/* Slide 1 */}
                         <SwiperSlide>
-                            <div
-                                className="h-full bg-cover bg-center flex items-center justify-center"
-                                style={{
-                                    backgroundImage: "url('/img/wallpap3.jpg')",
-                                }}
-                            >
-                                <div className="text-center">
-                                    <h1 className="text-7xl font-bold text-white mb-4">
-                                        Fiber Optic Specialist
-                                    </h1>
-                                    <p className="text-lg text-blue-700 mb-6">
-                                        Nama saya Dani, dan ini adalah landing
-                                        page dengan Tailwind CSS.
-                                    </p>
-                                    <button className="bg-blue-700 text-white px-6 py-2 rounded hover:bg-blue-600">
-                                        Get Started
-                                    </button>
-                                </div>
-                            </div>
-                        </SwiperSlide>
+  <div
+    className="h-full bg-cover bg-center flex items-center justify-center relative"
+    style={{
+      backgroundImage: "url('/img/wallpap3.jpg')",
+    }}
+  >
+    {/* Overlay gradasi */}
+    <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/70"></div>
+    {/* Konten utama */}
+    <div className="text-center z-10 px-4">
+      <h1 className="text-6xl md:text-7xl font-extrabold text-white mb-4 drop-shadow-lg">
+        Fiber Optic Specialist
+      </h1>
+      <p className="text-base md:text-lg text-white font-bold mb-6 max-w-2xl mx-auto">
+        Nama saya Dani, dan ini adalah landing page dengan Tailwind CSS yang
+        lebih menarik.
+      </p>
+      <button className="bg-blue-700 text-white px-6 py-3 rounded-full text-lg font-semibold shadow-lg hover:bg-blue-600 transition-all duration-300 hover:scale-105">
+        Get Started
+      </button>
+    </div>
+  </div>
+</SwiperSlide>
+
 
                         {/* Slide 2 */}
-                        <SwiperSlide>
-                            <div
-                                className="h-full bg-cover bg-center flex items-center justify-center"
-                                style={{
-                                    backgroundImage: "url('/img/wallpap4.jpg')",
-                                }}
-                            >
-                                <div className="text-left">
-                                    <h1 className="text-7xl font-bold text-white mb-4">
-                                        Instalation And Maintenance
-                                    </h1>
-                                    <p className="text-lg text-blue-700 mb-6">
-                                        Kami menawarkan layanan terbaik untuk
-                                        kebutuhan Anda.
-                                    </p>
-                                    <button className="bg-blue-700 text-white px-6 py-2 rounded hover:bg-blue-600">
-                                        Learn More
-                                    </button>
-                                </div>
-                            </div>
-                        </SwiperSlide>
+<SwiperSlide>
+  <div
+    className="h-full bg-cover bg-center flex items-center justify-center relative"
+    style={{
+      backgroundImage: "url('/img/wallpap4.jpg')",
+    }}
+  >
+    {/* Overlay gradasi */}
+    <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/70"></div>
+    {/* Konten utama */}
+    <div className="text-left z-10 px-4">
+      <h1 className="text-6xl md:text-7xl font-extrabold text-white mb-4 drop-shadow-lg">
+        Installation And Maintenance
+      </h1>
+      <p className="text-base md:text-lg text-white font-bold mb-6 max-w-2xl mx-auto">
+          Kami menawarkan layanan terbaik untuk kebutuhan Anda.
+      </p>
+      <button className="bg-blue-700 text-white px-6 py-3 rounded-full text-lg font-semibold shadow-lg hover:bg-blue-600 transition-all duration-300 hover:scale-105">
+        Learn More
+      </button>
+    </div>
+  </div>
+</SwiperSlide>
 
-                        {/* Slide 3 */}
-                        <SwiperSlide>
-                            <div
-                                className="h-full bg-cover bg-center flex items-center justify-center"
-                                style={{
-                                    backgroundImage: "url('/img/wallpap5.jpg')",
-                                }}
-                            >
-                                <div className="text-center">
-                                    <h1 className="text-7xl font-bold text-white mb-4">
-                                        Join Us "Pusat Kreasi"
-                                    </h1>
-                                    <p className="text-lg text-blue-700 mb-6">
-                                        Bergabunglah dengan komunitas kami dan
-                                        nikmati manfaatnya.
-                                    </p>
-                                    <button className="bg-blue-700 text-white px-6 py-2 rounded hover:bg-blue-600">
-                                        Join Now
-                                    </button>
-                                </div>
-                            </div>
-                        </SwiperSlide>
+{/* Slide 3 */}
+<SwiperSlide>
+  <div
+    className="h-full bg-cover bg-center flex items-center justify-center relative"
+    style={{
+      backgroundImage: "url('/img/wallpap5.jpg')",
+    }}
+  >
+    {/* Overlay gradasi */}
+    <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/70"></div>
+    {/* Konten utama */}
+    <div className="text-center z-10 px-4">
+      <h1 className="text-6xl md:text-7xl font-extrabold text-white mb-4 drop-shadow-lg">
+        Join Us "Pusat Kreasi"
+      </h1>
+      <p className="text-base md:text-lg text-white font-bold mb-6 max-w-2xl mx-auto">
+
+          Bergabunglah dengan komunitas kami dan nikmati manfaatnya.
+        
+      </p>
+      <button className="bg-blue-700 text-white px-6 py-3 rounded-full text-lg font-semibold shadow-lg hover:bg-blue-600 transition-all duration-300 hover:scale-105">
+        Join Now
+      </button>
+    </div>
+  </div>
+</SwiperSlide>
+
                     </Swiper>
                 </section>
 
-                {/* About Section */}
+                {/* ABOUT */}
                 <section id="about" className="py-20 bg-white">
                     <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-                        {/* Kolom 1: Teks */}
                         <div className="text-center md:text-left">
                             <h3 className="text-3xl font-bold text-gray-800 mb-4">
                                 About Us
@@ -117,7 +126,6 @@ export default function Home() {
                             </p>
                         </div>
 
-                        {/* Kolom 2: Gambar */}
                         <div className="flex justify-center">
                             <img
                                 src="/img/business.png"
@@ -128,15 +136,13 @@ export default function Home() {
                     </div>
                 </section>
 
-                {/* About Section */}
-
+                {/* SERVICES*/}
                 <section className="py-20 bg-white">
                     <h3 className="text-3xl font-bold text-center text-gray-800 mb-20">
                         Our Exciting Service Offerings
                     </h3>
                     <div className="container mx-auto">
                         <div className="grid grid-cols-1 md:grid-cols-4">
-                            {/* Kolom Kiri: Informasi Utama */}
                             <div className="bg-blue-500 text-gray-600 text-justify text-white p-[15%]">
                                 <h2 className="text-3xl font-bold mb-4">
                                     Why Us ?
@@ -175,7 +181,6 @@ export default function Home() {
                                 </a>
                             </div>
 
-                            {/* Kolom-Kolom Kanan */}
                             <div className="bg-blue-50 p-8 text-center bg-[url('/img/p1.png')] bg-cover bg-full">
                                 <div className="mb-4">
                                     <div className="bg-blue-100 rounded-full p-4 inline-block">
@@ -269,9 +274,9 @@ export default function Home() {
                     </div>
                 </section>
 
+                {/* SERVICES 1 */}
                 <section id="services" className="py-20">
                     <div className="container mx-auto text-center max-w-6xl">
-                        {/* Judul Section */}
                         <h3 className="text-4xl font-extrabold text-gray-800 mb-6">
                             Our Services
                         </h3>
@@ -283,7 +288,6 @@ export default function Home() {
 
                         <div className="border-b-4 border-blue-500 w-16 mx-auto mb-12"></div>
 
-                        {/* Grid Konten */}
                         <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
                             {/* Card 1 */}
                             <div
@@ -368,7 +372,7 @@ export default function Home() {
                         </div>
                     </div>
                 </section>
-
+                {/* MITRA */}
                 <section
                     id="services"
                     className="py-20 bg-white bg-fixed"
@@ -449,7 +453,6 @@ export default function Home() {
                             </p>
                         </div>
 
-                        {/* Kolom Kanan: Formulir */}
                         <div className="bg-white rounded-lg shadow-md p-8">
                             <h3 className="text-2xl font-bold text-gray-800 mb-6">
                                 General Information
@@ -459,7 +462,6 @@ export default function Home() {
                                 method="POST"
                                 className="space-y-4"
                             >
-                                {/* Nama */}
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                                     <div className="mb-4">
                                         <label
@@ -494,7 +496,6 @@ export default function Home() {
                                     </div>
                                 </div>
 
-                                {/* Phone & Website */}
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                                     <div>
                                         <label
@@ -527,7 +528,6 @@ export default function Home() {
                                     </div>
                                 </div>
 
-                                {/* Pesan */}
                                 <div>
                                     <label
                                         htmlFor="message"
@@ -544,7 +544,6 @@ export default function Home() {
                                     ></textarea>
                                 </div>
 
-                                {/* Tombol Kirim */}
                                 <div className="text-right">
                                     <button
                                         type="submit"

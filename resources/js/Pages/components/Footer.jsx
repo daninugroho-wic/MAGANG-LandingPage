@@ -167,9 +167,9 @@ const Footer = () => {
                     <div className="flex justify-between items-center">
                         <div className="flex items-center text-sm">
                             <img
-                                src="img/iconsmsta.png" // Ganti dengan path gambar lokal Anda
+                                src="img/iconsmsta.png"
                                 alt="Freepik Logo"
-                                className="h-6 mr-2" // Menentukan tinggi gambar dan memberikan margin kanan
+                                className="h-6 mr-2" 
                             />
                             <p className="mb-0">
                                 © Copyright Maxnet+ By KabelTelekom. All Rights
@@ -177,16 +177,15 @@ const Footer = () => {
                             </p>
                         </div>
                         <button
-                            className="bg-transparent border border-blue-500 text-blue-500 px-3 py-1 rounded text-xs"
+                            className="bg-transparent border border-blue-500 text-black px-3 py-1 rounded text-xs"
                             type="button"
                         >
                             English ▼
                         </button>
                     </div>
                     <div className="container mx-auto flex justify-between items-center p-4 mt-10 text-xs bg-blue-100">
-                        {/* Maxnet Project */}
                         <div>
-                            <p className="mb-0 text-gray-400">Maxnet project</p>
+                            <p className="mb-0 text-gray-400">Semesta Pusat Kreasi</p>
                         </div>
                         {/* Links */}
                         <div className="flex space-x-4">
